@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Box} from "@mui/material";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+      <Box sx={{position: 'absolute', backgroundColor: 'rgba(0,0,0,0.3)', width: '100%', height: 'inherit', zIndex: '0'}}></Box>
+      <App />
   </React.StrictMode>
 );
 
